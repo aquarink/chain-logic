@@ -19,7 +19,7 @@
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="?url=penyakit"><i class="glyphicon glyphicon-heart"></i> Penyakit</a></li>
+          <li class="active"><a href="?url=adminhome"><i class="glyphicon glyphicon-heart"></i> Penyakit</a></li>
           <li><a href="?url=artificial"><i class="glyphicon glyphicon-screenshot"></i> Artificial</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
@@ -31,7 +31,8 @@
 
   <div class="container">
     <div class="col-md-12">
-      <h4>List Penyakit</h4>
+      <h4>List Penyakit</h4><button class="btn btn-success btn-xs" data-title="Tambah Data" data-toggle="modal" data-target="#tambah" ><span class="glyphicon glyphicon-plus"></span> Tambah Penyakit</button>
+
       <div class="table-responsive" style="background-color:#fff">
         <table id="mytable" class="table table-responsive">
           <tr>
@@ -86,7 +87,7 @@
                 <textarea name="solusiEdit" rows="2" class="form-control"><?php echo $penyakitModal['solusi']; ?></textarea>
               </div>
               <div class="form-group">
-                <input name="gambarEdit" class="form-control " type="file">
+                <input name="gambarEdit" class="form-control " type="file" accept="image/*">
               </div>
             </div>
             <div class="modal-footer ">

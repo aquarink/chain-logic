@@ -11,6 +11,18 @@ if(isset($_SESSION['sesi'])) {
     $ambilPertanyaanById = $PertanyaanModel->ambilPertanyaanById($_GET['id']);
   }
 
+  $sesiJawaban = $PertanyaanModel->sesiJawaban($_SESSION['sesi']);
+
+  foreach ($sesiJawaban as $valueSessi) {
+    $sessiCount[] = $valueSessi['id_sessi'];
+  }
+
+  $resultCount = count($sessiCount);
+
+  if($resultCount >= 15) {
+    $skip = '<a href="?url=hasil&id='.$_SESSION['sesi'].'">Skip, Ke Hasil</a>';
+  }
+
   if($_GET['id'] > 15) {
     header('location: ?url=hasil&id='.$_SESSION['sesi']);
   }

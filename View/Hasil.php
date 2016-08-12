@@ -20,8 +20,8 @@
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
           <li><a href="?"><i class="glyphicon glyphicon-home"></i> Beranda</a></li>
-          <li class="active"><a href="?url=penyakit"><i class="glyphicon glyphicon-heart"></i> Penyakit</a></li>
-          <li><a href="?url=user"><i class="glyphicon glyphicon-plus"></i> Konsultasi</a></li>
+          <li><a href="?url=penyakit"><i class="glyphicon glyphicon-heart"></i> Penyakit</a></li>
+          <li class="active"><a href="?url=user"><i class="glyphicon glyphicon-plus"></i> Konsultasi</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">

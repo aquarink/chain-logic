@@ -64,6 +64,14 @@ class PertanyaanModel {
     return $result;
   }
 
+  public function sesiJawaban($id_sessi) {
+    $query = $this->panggilKoneksi->prepare("SELECT * FROM jawaban_tb WHERE id_sessi = ?");
+    $data = array($id_sessi);
+    $query->execute($data);
+    $result = $query->fetchAll(); // fetchAll = mysql_fetch_array
+    return $result;
+  }
+
   public function cekJawaban($id_sessi, $id_pertanyaan) {
     $query = $this->panggilKoneksi->prepare("SELECT * FROM jawaban_tb WHERE id_sessi = ? AND id_pertanyaan = ?");
     $data = array($id_sessi, $id_pertanyaan);

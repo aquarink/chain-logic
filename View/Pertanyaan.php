@@ -97,6 +97,8 @@
             </label>
           </div>
           <input name="start_tanya" class="btn btn-lg btn-primary btn-block" style="width:100px" type="submit" value="Proses">
+          <br>
+          <?php if(isset($skip)) { echo $skip; } ?>
         </center>
       </form>
       <?php } ?>
