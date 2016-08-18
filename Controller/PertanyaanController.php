@@ -21,6 +21,8 @@ if(isset($_SESSION['sesi'])) {
 
   if($resultCount >= 15) {
     $skip = '<a href="?url=hasil&id='.$_SESSION['sesi'].'">Skip, Ke Hasil</a>';
+    $idSatu = $_GET['id']+1;
+    $skipPertanyaan = '<a href="?url=pertanyaan&id='.$idSatu.'">Skip Pertanyaan</a>';
   }
 
   if($_GET['id'] > 15) {

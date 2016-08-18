@@ -84,6 +84,8 @@
           <div class="radio">
             <label><input type="radio" name="jawab" value="2">Tidak..!</label>
           </div>
+          <?php
+          if(isset($skipPertanyaan)) { echo '<div class="radio"><label>'.$skipPertanyaan.'</div>'; } ?>
           <div class="checkbox">
             <label>
               <?php

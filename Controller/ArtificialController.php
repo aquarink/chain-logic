@@ -15,7 +15,12 @@ if(isset($_GET['id'])) {
   $RelasiPenyakitPenyebab = $RelasiModel->relasiPenyakitPenyebab($_GET['id']);
 
   if(isset($_GET['fact'])) {
-
+    $deleteRelasi = $RelasiModel->deleteRelasi($_GET['fact']);
+    if($deleteRelasi > 0) {
+      header('location: ?url=artificial&id='.$_GET['id']);
+    } else {
+      $pesan = 'Error deleteRelasi';
+    }
   }
 
   //
