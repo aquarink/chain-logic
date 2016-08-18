@@ -38,28 +38,29 @@
   <div class="container">
     <center><h2>HASIL ANALISA</h2></center>
     <div class="panel-group">
-
+      <?php foreach($penyakitnya as $sakitData) { ?>
       <div class="panel panel-primary">
         <div class="panel-heading"><center>Nama Penyakit</center></div>
-        <div class="panel-body"><center>Panel Content</center></div>
+        <div class="panel-body"><center><?php echo $sakitData['nama_penyakit'] ?></center></div>
       </div>
 
       <div class="panel panel-success">
         <div class="panel-heading"><center>Solusi Penyembuhan</center></div>
-        <div class="panel-body"><center>Panel Content</center></div>
+        <div class="panel-body"><center><?php echo $sakitData['solusi'] ?></center></div>
       </div>
 
       <div class="panel panel-info">
         <div class="panel-heading"><center>Penyebab</center></div>
-        <div class="panel-body"><center>Panel Content</center></div>
+        <div class="panel-body"><center><?php echo $sakitData['penyebab'] ?></center></div>
       </div>
 
       <div class="panel panel-danger">
         <div class="panel-heading"><center>Ciri-Ciri</center></div>
-        <div class="panel-body"><center>Panel Content</center></div>
+        <div class="panel-body"><center><?php echo $sakitData['penyebab'] ?></center></div>
       </div>
       <center style="padding-top: 10px" ><a class="btn btn-danger" href="?url=keluar&session=<?php echo $_GET['id']; ?>"><i class="glyphicon glyphicon-log-out"></i> Selsai</a></center>
     </div>
+    <?php } ?>
   </div>
 
   <script src="Library/js/jquery.min.js"></script>

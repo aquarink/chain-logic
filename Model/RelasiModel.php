@@ -74,4 +74,20 @@ class RelasiModel {
     $ambilData = $query->fetchAll(); // fetchAll = mysql_fetch_array
     return $ambilData;
   }
+
+  public function dataPenyakitByRelasi($idp) {
+    $query = $this->panggilKoneksi->prepare("SELECT id_penyakit FROM relasi_tb WHERE id_penyebab = ?");
+    $nilai = array($idp); // mysql_escaped_real_string
+    $query->execute($nilai);
+    $ambilData = $query->fetchAll(); // fetchAll = mysql_fetch_array
+    return $ambilData;
+  }
+
+  public function relasiJawaban($idSession) {
+    $query = $this->panggilKoneksi->prepare("SELECT * FROM jawaban_tb WHERE id_sessi = ? AND jawaban = 1");
+    $nilai = array($idSession); // mysql_escaped_real_string
+    $query->execute($nilai);
+    $ambilData = $query->fetchAll(); // fetchAll = mysql_fetch_array
+    return $ambilData;
+  }
 }
