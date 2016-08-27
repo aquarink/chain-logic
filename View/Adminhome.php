@@ -20,6 +20,7 @@
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
           <li class="active"><a href="?url=adminhome"><i class="glyphicon glyphicon-heart"></i> Penyakit</a></li>
+          <li><a href="?url=penyebab"><i class="glyphicon glyphicon-plus"></i> Penyebab</a></li>
           <li><a href="?url=artificial"><i class="glyphicon glyphicon-screenshot"></i> Artificial</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">

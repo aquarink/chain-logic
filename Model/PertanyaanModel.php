@@ -15,6 +15,30 @@ class PertanyaanModel {
     return $this->panggilKoneksi;
   }
 
+  public function insertPertanyaan($pertanyaan) {
+    $query = $this->panggilKoneksi->prepare("INSERT INTO pertanyaan_tb (pertanyaan) VALUES(?)");
+    $data = array($pertanyaan);
+    $query->execute($data);
+    $result = $query->rowCount(); // rowCount = untunk mengambil nilai dasar (0 /1)
+    return $result;
+  }
+
+  public function updatePertanyaan($pertanyaan, $id) {
+    $query = $this->panggilKoneksi->prepare("UPDATE pertanyaan_tb SET pertanyaan = ? WHERE id_pertanyaan = ?");
+    $data = array($pertanyaan, $id);
+    $query->execute($data);
+    $result = $query->rowCount(); // rowCount = untunk mengambil nilai dasar (0 /1)
+    return $result;
+  }
+
+  public function hapusPertanyaan($id_pertanyaan) {
+    $query = $this->panggilKoneksi->prepare("DELETE FROM pertanyaan_tb WHERE id_pertanyaan = ?");
+    $data = array($id_pertanyaan);
+    $query->execute($data);
+    $result = $query->rowCount(); // rowCount = untunk mengambil nilai dasar (0 /1)
+    return $result;
+  }
+
   public function ambilSemuaPertanyaan() {
     $query = $this->panggilKoneksi->prepare("SELECT * FROM pertanyaan_tb");
     $query->execute();
