@@ -36,7 +36,60 @@
   </nav>
 
   <div class="container">
-      <img class="img img-responsive" src="Library/images/middle_banner.gif" width="100%" />
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="Library/images/11.jpg" alt="Louhan Satu" width="100%" style="height:400px">
+          <div class="carousel-caption">
+            <h3>Louhan Satu</h3>
+            <p>Keterangan Louhan Satu</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="Library/images/22.jpg" alt="Louhan Dua" width="100%" style="height:400px">
+          <div class="carousel-caption">
+            <h3>Louhan Dua</h3>
+            <p>Keterangan Louhan Dua</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="Library/images/33.jpg" alt="Louhan Tiga" width="100%" style="height:400px">
+          <div class="carousel-caption">
+            <h3>Louhan Tiga</h3>
+            <p>Keterangan Louhan Tiga</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="Library/images/44.jpg" alt="Louhan Empat" width="100%" style="height:400px">
+          <div class="carousel-caption">
+            <h3>Louhan Empat</h3>
+            <p>Keterangan Louhan Empat</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
   </div>
 
   <script src="Library/js/jquery.min.js"></script>
