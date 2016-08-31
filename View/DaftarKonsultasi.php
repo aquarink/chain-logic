@@ -85,6 +85,13 @@
       </div>
       <input name="start_konsul" class="btn btn-lg btn-primary btn-block" type="submit" value="Mulai Konsultasi">
     </form>
+    <div class="footer navbar-fixed-bottom">
+      <div class="alert alert-warning" style="margin-bottom: 0px;">
+        <center>
+          <marquee behavior="scroll" direction="left">Selamat Datanag di Budi Louhan Center</marquee>
+        </center>
+      </div>
+    </div>
   </div>
 
   <script src="Library/js/jquery.min.js"></script>

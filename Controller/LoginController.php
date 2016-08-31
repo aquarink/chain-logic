@@ -9,7 +9,7 @@ if(isset($_SESSION['sesiadmin'])) {
       $pesan = 'Mohon masukan password!';
     } else {
       $password = $_POST['Password'];
-      if($password == 'admin') {
+      if($password == 'admin') { // << password
         $_SESSION['sesiadmin'] = 1234567890;
         header('location: ?url=adminhome');
       } else {

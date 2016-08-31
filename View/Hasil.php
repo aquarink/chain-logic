@@ -61,6 +61,13 @@
       <center style="padding-top: 10px" ><a class="btn btn-danger" href="?url=keluar&session=<?php echo $_GET['id']; ?>"><i class="glyphicon glyphicon-log-out"></i> Selsai</a></center>
     </div>
     <?php } ?>
+    <div class="footer navbar-fixed-bottom">
+      <div class="alert alert-warning" style="margin-bottom: 0px;">
+        <center>
+          <marquee behavior="scroll" direction="left">Selamat Datanag di Budi Louhan Center</marquee>
+        </center>
+      </div>
+    </div>
   </div>
 
   <script src="Library/js/jquery.min.js"></script>
